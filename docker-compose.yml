@@ -10,11 +10,3 @@ services:
       WORDPRESS_DB_NAME: wordpress_db_febm
       WORDPRESS_DB_USER: wordpress
       WORDPRESS_DB_PASSWORD: CqgQERgbrch69YrivwWMniKo4Bq3WXh4
-
-  db:
-    image: postgres:16
-    restart: always
-    environment:
-      POSTGRES_DB: wordpress_db_febm
-      POSTGRES_USER: wordpress
-      POSTGRES_PASSWORD: CqgQERgbrch69YrivwWMniKo4Bq3WXh4
