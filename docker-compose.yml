@@ -6,15 +6,15 @@ services:
     ports:
       - 8080:80
     environment:
-      WORDPRESS_DB_HOST: db
-      WORDPRESS_DB_NAME: wordpress
+      WORDPRESS_DB_HOST: dpg-d0ra5lh5pdvs73dq0kqg-a:5432
+      WORDPRESS_DB_NAME: wordpress_db_febm
       WORDPRESS_DB_USER: wordpress
-      WORDPRESS_DB_PASSWORD: your-db-password
+      WORDPRESS_DB_PASSWORD: CqgQERgbrch69YrivwWMniKo4Bq3WXh4
 
   db:
-    image: postgres:13
+    image: postgres:16
     restart: always
     environment:
-      POSTGRES_DB: wordpress
+      POSTGRES_DB: wordpress_db_febm
       POSTGRES_USER: wordpress
-      POSTGRES_PASSWORD: your-db-password
+      POSTGRES_PASSWORD: CqgQERgbrch69YrivwWMniKo4Bq3WXh4
